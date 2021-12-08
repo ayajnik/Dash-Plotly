@@ -21,7 +21,7 @@ data = [
         x = df_final.columns,
         y = df_final.loc[name],
         mode = 'lines',
-        name = "Population trend"
+        name = name
     )
     for name in df_final.index
 ]
