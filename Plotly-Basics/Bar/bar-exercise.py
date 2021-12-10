@@ -5,11 +5,13 @@ import plotly.graph_objs as go
 #reading the dataframe
 df = pd.read_csv(r'E:\Python development\Dash-Plotly\Plotly-Dashboards-with-Dash-master\Data\mocksurvey.csv',index_col=0)
 
+## if you want to build a horizontal bar chart, then in go.Bar(), add orientation='h'
 data = [
     go.Bar(
-        x=df.index,
-        y=df[responses],
-        name=responses
+        x=df[responses],
+        y=df.index,
+        name=responses,
+        orientation='h'
     )
     for responses in df.columns
 ]
