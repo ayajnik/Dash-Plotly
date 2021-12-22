@@ -47,7 +47,7 @@ app.layout = html.Div(children=[
                 xaxis = {'title': 'Some random x-values'},
                 yaxis = {'title': 'Some random y-values'},
                 hovermode='closest'
-            ),'paper_bgcolor': colors['background'],'plot_bgcolor': colors['background']
+            ),'paper_bgcolor': 'black','plot_bgcolor': 'black'
         }
     )
 
