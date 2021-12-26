@@ -18,7 +18,7 @@ app.layout = html.Div([
         max=5,
         value=[-3, 4]
     ),
-    html.Div(id='result')  # this is the output
+    html.Div([html.H1(id='result')])  # this is the output
 ], style={'width':'50%'})
 
 # Create a Dash callback:
