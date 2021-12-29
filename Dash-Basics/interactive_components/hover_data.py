@@ -48,7 +48,7 @@ app.layout = html.Div([
 
 @app.callback(
     Output('hover-image', 'src'),
-    [Input('wheels-plot', 'hoverData')])
+    [Input('wheels-plot', 'hoverData')])##if you want to generate the image by clicking on the scatter plot points then instead of hoverData, write clickData
 def callback_image(hoverData):
     wheel=hoverData['points'][0]['y']
     color=hoverData['points'][0]['x']
