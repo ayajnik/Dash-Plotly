@@ -1,0 +1,5 @@
+we can use callback with state.
+
+This represents like a button. We can avoid live update of the input with callback state
+
+The state option goes with app.callback decorator in a list.
